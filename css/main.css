@@ -150,6 +150,10 @@ nav{
     background: url('../images/lime.svg') no-repeat;
     background-position: 0 70%;
 }
+.landing{
+    background: url('../images/lime.svg') no-repeat;
+    background-position: left 35%;
+}
 .section-title{
     text-align: center;
     font-size: 48px;
@@ -602,17 +606,41 @@ input{
 }
 .step:after{
     content: '';
-    background: url('../images/arrow.svg');
     width: 89px;
     height: 16px;
     position: absolute;
-    left: 100%;
+    right: -80px;
     top: 24%;
+    z-index: 0;
+}
+.step:first-child:after{
+    background: url('../images/arrow1.svg');
+
+}
+.step:nth-child(2):after{
+    background: url('../images/arrow2.svg');
+    width: 115px;
+    right: -88px;
+
+}
+.step:nth-child(3):after{
+    background: url('../images/arrow3.svg');
+    width: 121px;
+
+}
+.step:nth-child(4):after{
+    background: url('../images/arrow4.svg');
+    width: 128px;
+    right: -98px;
+
 }
 .step:last-child:after{
     display: none;
 }
-
+.step img{
+    position: relative;
+    z-index: 1;
+}
 .owl-stage{
     display: flex;
 }
