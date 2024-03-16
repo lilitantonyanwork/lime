@@ -18,8 +18,11 @@
         <nav class="header__menu df j-sp-btw a-center">
             <div class="header-left df a-center">
                 <div class="logo">
-                    <a href="#">
+                    <a href="#" class="logo-img">
                         <img src="images/logo.svg">
+                    </a>
+                    <a href="" class="menu__icon dn" >
+                        <img src="images/menu.png" alt="">
                     </a>
 
                 </div>
@@ -315,7 +318,57 @@
             © Lime Center, 2024
         </div>
     </footer>
-
+    <div class="login__popup">
+        <div class="popup__content">
+            <div class="close__popup"></div>
+            <h1 class="section-title">Войти в профиль</h1>
+            <form action="">
+                <div class="form__row">
+                    <input type="text" placeholder="Введите id сотрудника">
+                </div>
+                <div class="form__row">
+                    <input type="password" placeholder="Введите пароль">
+                </div>
+                <div class="form__row df j-sp-btw">
+                    <label>
+                        <input type="checkbox" placeholder="Введите пароль">
+                        Запомнить меня
+                    </label>
+                    <button class="btn">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="cv__popup">
+        <div class="popup__content">
+            <div class="close__popup"></div>
+            <h1 class="section-title">Отправить резюме</h1>
+            <form action="">
+                <div class="form__row">
+                    <input type="text" placeholder="ФИО">
+                </div>
+                <div class="form__row">
+                    <input type="text" placeholder="Город">
+                </div>
+                <div class="form__row">
+                    <input type="email" placeholder="Почта">
+                </div>
+                <div class="form__row">
+                    <input type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="form__row">
+                    <select name="" id="">
+                        <option>Опыт</option>
+                        <option>Опыт</option>
+                        <option>Опыт</option>
+                    </select>
+                </div>
+                <div class="form__row ">
+                    <button class="btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
