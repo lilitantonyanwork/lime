@@ -49,4 +49,22 @@ $(function (){
             }
         ]
     });
+    $('#login').on('click', function (e){
+
+        e.preventDefault();
+        $('.login__popup').css('display', 'flex')
+    })
+    $('#cv').on('click', function (e){
+        e.preventDefault();
+
+        $('.cv__popup').css('display', 'flex')
+    })
+    $('.close__popup').on('click', function (){
+        $('.login__popup').hide();
+        $('.cv__popup').hide();
+    });
+    $('.menu__icon').on('click',function (e){
+        e.preventDefault();
+            $('.header-right').toggleClass('show');
+    })
 })
