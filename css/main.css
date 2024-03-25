@@ -210,6 +210,12 @@ nav{
     color: #2E302C;
     margin-top: 30px;
 }
+.review__item video{
+    width: 238px;
+    height: 238px;
+    border-radius: 100%;
+    overflow: hidden;
+}
 .review__item a{
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -645,7 +651,7 @@ input{
     display: flex;
 }
 
-.login__popup, .cv__popup{
+.login__popup, .cv__popup, .video__popup{
     position: fixed;
     top: 0;
     left: 0;
@@ -666,6 +672,25 @@ input{
     border-radius: 40px;
     position: relative;
 
+}
+.video__popup .popup__content{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: rgba(0, 0,0, 0.3);
+    border-radius: 0;
+}
+.video__popup .popup__content video{
+    width: 100%;
+    height: 100%;
+}
+
+.video__popup .popup__content .close__popup{
+    z-index: 999;
+    cursor: pointer;
+}
+.video__popup .popup__content .close__popup{
+    filter: brightness(0) invert(1);;
 }
 
 .popup__content .form__row{
@@ -784,6 +809,10 @@ input{
         width: 167px;
         height: 167px;
     }
+    .review__item video{
+        width: 167px;
+        height: 167px;
+    }
     .review__item h4{
         font-size: 20px;
     }
@@ -829,6 +858,10 @@ input{
     }
     .review__item img{
         width: 168px;
+    }
+    .review__item video{
+        width: 167px;
+        height: 167px;
     }
     .counter:before{
         width: 100%;
@@ -1053,5 +1086,9 @@ input{
     }
     .review__item img{
         width: 100px;
+    }
+    .review__item video{
+        width: 100px;
+        height: 100px;
     }
 }

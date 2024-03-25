@@ -62,9 +62,19 @@ $(function (){
     $('.close__popup').on('click', function (){
         $('.login__popup').hide();
         $('.cv__popup').hide();
+        $('.video__popup').hide();
+        $(".video__popup video").get(0).pause()
     });
     $('.menu__icon').on('click',function (e){
         e.preventDefault();
             $('.header-right').toggleClass('show');
+    })
+    $('.review__item a').on('click', function (e){
+        e.preventDefault();
+        let videoFile = $(this).parent().find('video').attr('src')
+        $('.video__popup').css('display', 'flex');
+        $('.video__popup video').attr('src', videoFile);
+        $(".video__popup video").get(0).load();
+        $(".video__popup video").get(0).play();
     })
 })
